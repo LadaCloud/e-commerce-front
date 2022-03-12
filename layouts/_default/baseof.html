@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--head-meta-->
+	{{ partial "head-meta" . }}
+	<!--meta-additions-->
+	{{ block "meta-additions" . }}{{ end }}
+	<!--site-favicon-->
+	{{ partial "site-favicon" . }}
+	<!--site-style-->
+	{{ partial "site-style" . }}
+	<!--head-scripts-->
+	{{ partial "head-scripts" . }}
+	<!--head-additions-->
+	{{ block "head-additions" . }}{{ end }}
+</head>
+<body>
+{{ partial "header" . }}
+{{ block "header-additions" . }}{{ end }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer" . }}
+{{ partial "body-scripts" . }}
+</body>
+</html>

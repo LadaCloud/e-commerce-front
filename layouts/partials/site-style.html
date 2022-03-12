@@ -1,0 +1,9 @@
+{{ with (resources.Get "/css/bootstrap.min.css") }}
+<link rel="stylesheet" href="{{ .Permalink }}">
+{{ end }}
+{{ with (resources.Get "/css/bootstrap.min.css.map") }}
+<link href="{{ .Permalink }}">
+{{ end }}
+{{ with (resources.Get "/css/main.css") }}
+<link rel="stylesheet" href="{{ .Permalink }}">
+{{ end }}

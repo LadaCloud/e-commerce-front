@@ -1,0 +1,3 @@
+{{ with .Site.GetPage "page" .Site.Params.firstPage }}
+    {{ .Render .Site.Params.firstPageTemplate }} 
+{{end }}

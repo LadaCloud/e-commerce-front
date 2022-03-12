@@ -1,0 +1,10 @@
+baseURL = ""
+languageCode = "pt-br"
+title = "Lovelace Cloud"
+defaultContentLanguage = "pt-br"
+
+
+[params]
+  firstPage = "home"
+  firstPageTemplate = "home"
+  apiURL = "https://virtserver.swaggerhub.com/alexcologia/LoveLace/1.0"

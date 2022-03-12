@@ -1,0 +1,3 @@
+{{ with resources.Fingerprint (resources.Get "/js/bootstrap.bundle.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}

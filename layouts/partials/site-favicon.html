@@ -1,0 +1,4 @@
+{{ $imgPath := "/images/favicon.ico" }}
+{{ with (resources.Get $imgPath) }}
+<link rel="shortcut icon" href="{{ .RelPermalink  }}" type="image/x-icon"/>
+{{end}}
