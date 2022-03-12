@@ -1,3 +1,24 @@
 {{ with resources.Fingerprint (resources.Get "/js/bootstrap.bundle.min.js") }}
 <script src="{{ .Permalink }}"></script>
 {{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/jquery-3.4.1.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/wow/wow.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/easing/easing.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/waypoints/waypoints.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/counterup/counterup.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/lib/owlcarousel/owl.carousel.min.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
+{{ with resources.Fingerprint (resources.Get "/js/main.js") }}
+<script src="{{ .Permalink }}"></script>
+{{ end }}
